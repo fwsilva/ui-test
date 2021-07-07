@@ -23,26 +23,31 @@ export const Sidebar = ({
       style={{ backgroundColor }}
       {...props}
     >
-      <img src={logo} alt="9Th gear" width="154" height="34" className="brand" />
-      <ul className="menuItem">
-        {
-          pageList.map((item: any) => {
-            return (
-              <li key={item.id}>
-                <NavLink
-                  to={item.slug}
-                  isActive={(match, location) => {
-                    if (!match) {return false;}
-                    return location.pathname === item.slug;
-                  }}
-                >
-                  {item.title}
-                </NavLink>
-              </li>
-            )
-          })
-        }
-      </ul>
+      <div>
+        <img src={logo} alt="9Th gear" width="154" height="34" className="brand" />
+        <ul className="menuItem">
+          {
+            pageList.map((item: any) => {
+              return (
+                <li key={item.id}>
+                  <NavLink
+                    to={item.slug}
+                    isActive={(match, location) => {
+                      if (!match) { return false; }
+                      return location.pathname === item.slug;
+                    }}
+                  >
+                    {item.title}
+                  </NavLink>
+                </li>
+              )
+            })
+          }
+        </ul>
+      </div>
+      <div className="footer">
+        Say hello to <strong>Intraday Lending</strong> and <strong>Same-Day Trading & Settlement</strong>.
+      </div>
     </div>
   );
 };

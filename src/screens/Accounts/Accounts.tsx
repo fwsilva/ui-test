@@ -8,7 +8,7 @@ import './styles.css';
 
 const AccountsScreen: React.FC = (props) => {
 
-  console.log(props);
+  //console.log(props);
 
   // const accountList = useSelector((state: RootState) => state.accounts.data)
   // const dispatch = useDispatch();

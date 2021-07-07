@@ -11,6 +11,8 @@ import PricesScreen from "../screens/Prices/Prices";
 import TradeScreen from "../screens/Trade/Trade";
 import { RootState } from "../state/store";
 import { Sidebar } from "../stories/Sidebar/Sidebar";
+import { Header } from "../stories/Header/Header";
+
 import './Main.css';
 
 const MainNavigator: React.FC = () => {
@@ -22,7 +24,7 @@ const MainNavigator: React.FC = () => {
             <Router>
                 <Sidebar pageList={pages} />
                 <div className="mainContainer">
-                    <div>Header Goes here</div>
+                    <Header />
                     <div className="pageContainer">
                         <Switch>
                             <Route path="/" exact={true}>
