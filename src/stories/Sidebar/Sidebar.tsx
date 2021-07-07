@@ -4,6 +4,7 @@ import logo from '../assets/9th-Gear-Logo.png';
 
 interface SidebarProps {
   backgroundColor?: string;
+  pageList: Array<any>;
 }
 
 /**
@@ -11,6 +12,7 @@ interface SidebarProps {
  */
 export const Sidebar = ({
   backgroundColor,
+  pageList,
   ...props
 }: SidebarProps) => {
 
@@ -21,6 +23,11 @@ export const Sidebar = ({
       {...props}
     >
       <img src={logo} alt="9Th gear" width="154" height="34" />
+      {
+        pageList.map((item: any) => {
+          return <div key={item.id}>{item.title}</div>
+        })
+      }
     </div>
   );
 };

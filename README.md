@@ -27,7 +27,6 @@ In the project directory, you can run:
 In the project directory, you can run:
 
 ### `npm run start`
-### `npm run start`
 ### `npm run test`
 ### `npm run build`
 ### `npm run eject`
