@@ -1,6 +1,10 @@
 /* Move this elsewhere */
-
 .appContainer{
     display: flex;
     flex-direction: row;
+}
+
+.pageContainer{
+    display: flex;
+    flex-direction:column;
 }
