@@ -22,22 +22,24 @@ const MainNavigator: React.FC = () => {
         <div className="appContainer">
             <Router>
                 <Sidebar pageList={pages} />
-                <div className="pageContainer">
+                <div className="mainContainer">
                     <div>Header Goes here</div>
-                    <Switch>
-                        <Route path="/" exact={true}>
-                            <TradeScreen />
-                        </Route>
-                        <Route path="/balances">
-                            <BalancesScreen />
-                        </Route>
-                        <Route path="/accounts">
-                            <AccountsScreen />
-                        </Route>
-                        <Route path="/prices">
-                            <PricesScreen />
-                        </Route>
-                    </Switch>
+                    <div className="pageContainer">
+                        <Switch>
+                            <Route path="/" exact={true}>
+                                <TradeScreen />
+                            </Route>
+                            <Route path="/balances">
+                                <BalancesScreen />
+                            </Route>
+                            <Route path="/accounts">
+                                <AccountsScreen />
+                            </Route>
+                            <Route path="/prices">
+                                <PricesScreen />
+                            </Route>
+                        </Switch>
+                    </div>
                 </div>
             </Router>
         </div>

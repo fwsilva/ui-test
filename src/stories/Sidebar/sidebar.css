@@ -30,6 +30,11 @@
   position: relative;
 }
 
+.storybook-sidebar .menuItem li a.active{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .storybook-sidebar .menuItem li a.active:before {
   content: "";
   background-color: #e7740b;

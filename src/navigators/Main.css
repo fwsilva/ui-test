@@ -1,10 +1,17 @@
 /* Move this elsewhere */
-.appContainer{
-    display: flex;
-    flex-direction: row;
+.appContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0eff5;
+  flex: 1;
 }
 
 .pageContainer{
-    display: flex;
-    flex-direction:column;
+    padding: 45px 35px;
 }
