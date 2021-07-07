@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export interface AccountsState {
-  accounts: Array<any>
+  data: Array<any>
 }
 
 const initialState: AccountsState = {
-    accounts: [],
+  data: [],
 }
 
 export const accountsSlice = createSlice({
