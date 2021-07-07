@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import accountsReducer from './features/accounts';
+import sidebarMenuReducer from './features/sidebarMenu';
 
 export const store = configureStore({
   reducer: {
-    accounts: accountsReducer
+    accounts: accountsReducer,
+    sidebarMenu: sidebarMenuReducer
   },
 })
 

@@ -32,13 +32,7 @@ export const Sidebar = ({
                 <NavLink
                   to={item.slug}
                   isActive={(match, location) => {
-                    if (!match) {
-                      return false;
-                    }
-                    console.log(location.pathname, item.slug);
-
-                    // only consider an event active if its event id is an odd number
-                    //const eventID = parseInt(match.params.eventID);
+                    if (!match) {return false;}
                     return location.pathname === item.slug;
                   }}
                 >
