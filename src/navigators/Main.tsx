@@ -10,7 +10,6 @@ import PricesScreen from "../screens/Prices/Prices";
 import TradeScreen from "../screens/Trade/Trade";
 
 const MainNavigator: React.FC = () => {
-    console.log(process.env.REACT_API_URI);
     return (
         <Router>
             <Switch>
