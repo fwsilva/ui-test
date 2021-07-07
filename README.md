@@ -2,7 +2,7 @@
 
 ## Development Log
 
-### 05/04/2021
+### 07/07/2021
 
 * Project setup (CRA, TypeScript, Router, StoryBook, Redux)
 
