@@ -13,7 +13,7 @@ interface SidebarProps {
  */
 export const Sidebar = ({
   backgroundColor,
-  pageList,
+  pageList = [],
   ...props
 }: SidebarProps) => {
 
