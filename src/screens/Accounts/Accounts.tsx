@@ -1,5 +1,6 @@
 import React /*, { useEffect } */ from 'react';
 import { Button } from '../../stories/Button/Button';
+import { Card } from '../../stories/Card/Card';
 import { TitleBar } from '../../stories/Titlebar/TitleBar';
 
 import './styles.css';
@@ -27,11 +28,11 @@ const AccountsScreen: React.FC = (props) => {
   //   loadData();
   // }, [])
 
-  return <div>
+  return <>
     <TitleBar title="Accounts" button={saveButton}/>
-    Accounts
+    <Card child={<div>Hey</div>} />
 
-  </div>;
+  </>;
 }
 
 export default AccountsScreen;
